@@ -49,5 +49,81 @@
       <div style=" width:40%; padding-top: 150px; padding-left:25%">
       		<hr style=" border-color: #03C"/>
       </div>   
+      <!-- Note :
+   - You can modify the font style and form style to suit your website. 
+   - Code lines with comments “Do not remove this code”  are required for the form to work properly, make sure that you do not remove these lines of code. 
+   - The Mandatory check script can modified as to suit your business needs. 
+   - It is important that you test the modified form before going live.-->
+<div id='crmWebToEntityForm' style='width:600px;margin:auto;'>
+   <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
+   <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads584146000001881178 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory()' accept-charset='UTF-8'>
+
+	 <!-- Do not remove this code. -->
+	<input type='text' style='display:none;' name='xnQsjsdp' value='06dcbb1e82798028363182e99f2925abccc31d7de97e2515d2822216586e9ea9'/>
+	<input type='hidden' name='zc_gad' id='zc_gad' value=''/>
+	<input type='text' style='display:none;' name='xmIwtLD' value='5b6914a3a22bee049a766161abf6edfac6ae5da2f80d5465fc6fb7b0f34eda49'/>
+	<input type='text' style='display:none;'  name='actionType' value='TGVhZHM='/>
+
+	<input type='text' style='display:none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;cn.zoho.com' /> 
+	 <!-- Do not remove this code. -->
+	<style>
+		tr , td { 
+			padding:6px;
+			border-spacing:0px;
+			border-width:0px;
+			}
+	</style>
+	<table style='width:600px;background-color:#e83a74;color:black'>
+
+	<tr><td colspan='2' style='text-align:left;color:black;font-family:Arial;font-size:14px;'><strong>&#x7acb;&#x5373;&#x6ce8;&#x518c;</strong></td></tr>
+
+	<tr><td><span style='nowrap:nowrap;font-size:12px;font-family:Arial;width:200px;line-height: 22px;'>Email</span><br><input type='text' maxlength='100' style='width:250px;' name='Email'></input></td></tr>
+
+	<tr><td><span style='nowrap:nowrap;font-size:12px;font-family:Arial;width:200px;line-height: 22px;'>&#x59d3;&#x540d;<span style='color:red;'>*</span></span><br><input type='text' maxlength='80' style='width:250px;' name='Last Name'></input></td></tr>
+
+	<tr><td colspan='2' style='text-align:left; padding-top:15px;'>
+		<input style='font-size:12px;color:#131307' type='submit' value='提交' />
+		<input type='reset' style='font-size:12px;color:#131307' value='重置' />
+	    </td>
+	</tr>
+   </table>
+	<script>
+ 	  var mndFileds=new Array('Last Name');
+ 	  var fldLangVal=new Array('姓名');
+		var name='';
+		var email='';
+
+ 	  function checkMandatory() {
+		for(i=0;i<mndFileds.length;i++) {
+		  var fieldObj=document.forms['WebToLeads584146000001881178'][mndFileds[i]];
+		  if(fieldObj) {
+			if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+			  alert(fldLangVal[i] +' cannot be empty'); 
+   	   	  	  fieldObj.focus();
+   	   	  	  return false;
+			}  else if(fieldObj.nodeName=='SELECT') {
+  	   	   	 if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
+				alert(fldLangVal[i] +' cannot be none'); 
+				fieldObj.focus();
+				return false;
+			   }
+			} else if(fieldObj.type =='checkbox'){
+ 	 	 	 if(fieldObj.checked == false){
+				alert('Please accept  '+fldLangVal[i]);
+				fieldObj.focus();
+				return false;
+			   } 
+			 } 
+			 try {
+			     if(fieldObj.name == 'Last Name') {
+				name = fieldObj.value;
+ 	 	 	    }
+			} catch (e) {}
+		    }
+		}
+	     }
+	   </script>
+	</form>
+</div>
 </body>
 </html>
