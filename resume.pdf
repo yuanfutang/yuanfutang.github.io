@@ -1,0 +1,5 @@
+<html>
+	<body marginwidth="0" marginheight="0" style="background-color: #ffffe5">
+		<embed width="100%" height="100%" name="plugin" src="http://yuanfutang.github.io/resume.pdf" type="application/pdf">
+	</body>
+</html>
